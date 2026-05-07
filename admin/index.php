@@ -527,14 +527,14 @@ $is_list = is_array($tab_data) && (isset($tab_data[0]) || empty($tab_data));
 
             <?php if ($active_tab !== 'customization'): ?>
                 <?php $is_active = is_section_active($active_tab); ?>
-                <div class="card-cms mb-4 p-4 d-flex align-items-center justify-content-between" style="background: linear-gradient(135deg, #1e293b, #0f172a); color: white; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);">
+                <div class="card-cms mb-4 p-4 d-flex align-items-center justify-content-between" style="background: white; color: var(--dark); border-radius: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;">
                     <div class="d-flex align-items-center gap-3">
-                        <div class="status-icon-circle" style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                        <div class="status-icon-circle" style="width: 48px; height: 48px; border-radius: 50%; background: #f1f5f9; display: flex; align-items: center; justify-content: center; font-size: 20px;">
                             <i class="fa-solid <?= $is_active ? 'fa-eye text-success' : 'fa-eye-slash text-danger' ?>"></i>
                         </div>
                         <div>
-                            <h4 class="m-0 font-weight-bold" style="color: white; font-size: 18px; line-height: 1.2;">Section Visibility Status</h4>
-                            <p class="m-0 text-muted" style="font-size: 13px; margin-top: 4px;">This section is currently <?= $is_active ? '<strong class="text-success">Active (Visible on Live Site)</strong>' : '<strong class="text-danger">Disabled (Hidden on Live Site)</strong>' ?>.</p>
+                            <h4 class="m-0 font-weight-bold" style="color: var(--dark); font-size: 18px; line-height: 1.2;">Section Visibility Status</h4>
+                            <p class="m-0" style="color: #64748b; font-size: 13px; margin-top: 4px;">This section is currently <?= $is_active ? '<strong class="text-success">Active (Visible on Live Site)</strong>' : '<strong class="text-danger">Disabled (Hidden on Live Site)</strong>' ?>.</p>
                         </div>
                     </div>
                     <form method="POST" onsubmit="return confirm('Are you sure you want to <?= $is_active ? 'disable' : 'activate' ?> this section?');">
