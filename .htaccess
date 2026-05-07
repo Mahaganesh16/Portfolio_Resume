@@ -1,0 +1,17 @@
+RewriteEngine On
+DirectoryIndex index.php
+
+# 1. Handle Admin Panel Rewrites
+RewriteRule ^admin$ admin/index.php [L]
+RewriteRule ^admin/$ admin/index.php [L]
+RewriteRule ^admin/login$ admin/login.php [L]
+RewriteRule ^admin/logout$ admin/logout.php [L]
+RewriteRule ^admin/index$ admin/index.php [L]
+
+# 2. Hide .php Extension for main pages
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# 3. Prevent Directory Listing (Commented out to avoid 403)
+# Options -Indexes

@@ -1,0 +1,210 @@
+{
+    "hero": {
+        "sub_title": "Add Subtitle Here",
+        "title_prefix": "Add Prefix Here",
+        "name": "Add Name Here",
+        "designations": [
+            "Add Designation 1",
+            "Add Designation 2"
+        ],
+        "degrees": "Add Degrees Here",
+        "description": "Add a short description of yourself here.",
+        "image": "https:\/\/placehold.co\/600x750\/f1f5f9\/64748b?text=Add+Portrait+Image"
+    },
+    "customization": {
+        "is_profile_setup": false,
+        "site_title": "Add Site Title Here",
+        "meta_description": "Add Meta Description for SEO",
+        "primary_color": "#ff0000",
+        "background_color": "#f8fafc",
+        "font_family": "'Inter', sans-serif",
+        "logo_text": "Add Your Name",
+        "sidebar_image": "https:\/\/placehold.co\/400x400\/f1f5f9\/64748b?text=Portrait",
+        "sidebar_title": "Add Sidebar Title",
+        "sidebar_description": "Add Sidebar Description",
+        "sidebar_phone": "+00 00000-00000",
+        "sidebar_email": "example@email.com",
+        "sidebar_address": "Add Your Address Here"
+    },
+    "about": {
+        "title": "Add About Section Title",
+        "image": "https:\/\/placehold.co\/600x750\/f1f5f9\/64748b?text=Add+Your+Portrait+Image",
+        "bio": [
+            "Add your first biography paragraph here.",
+            "Add your second biography paragraph here."
+        ],
+        "details": [
+            {
+                "key": "Full Name",
+                "value": "Add Name"
+            },
+            {
+                "key": "Email",
+                "value": "Add Email"
+            }
+        ],
+        "education": [
+            {
+                "year": "Add Year",
+                "title": "Add Degree Title",
+                "desc": "Add Institution Name"
+            }
+        ]
+    },
+    "research": {
+        "intro": "Add a summary of your research activities here.",
+        "areas": [
+            {
+                "title": "Add Research Area",
+                "desc": "Add Area Description",
+                "icon": "fa-solid fa-flask"
+            }
+        ],
+        "thesis": [
+            {
+                "type": "Add Thesis Type",
+                "title": "Add Thesis Title",
+                "uni": "Add University Name",
+                "year": "Add Year"
+            }
+        ],
+        "patents_summary": {
+            "national_count": "0",
+            "national_label": "National Patents",
+            "intl_count": "0",
+            "intl_label": "International Patents",
+            "total_count": "0",
+            "total_label": "Total Patents",
+            "utility_design_count": "0",
+            "utility_design_label": "Utility Patents"
+        },
+        "projects": {
+            "title": "Add Projects Title",
+            "founder": "Add Founder Info",
+            "ceo": "Add CEO Info",
+            "desc": "Add Projects Description",
+            "clients": "Add Client Locations",
+            "projects": "Add Number of Projects"
+        }
+    },
+    "publications": {
+        "journals": [
+            {
+                "id": "[J1]",
+                "source": "Add Journal Source & Year",
+                "title": "Add Journal Paper Title",
+                "authors": "Add Authors"
+            }
+        ],
+        "conferences": [
+            {
+                "id": "[IC1]",
+                "source": "Add Conference Name & Location",
+                "title": "Add Conference Paper Title",
+                "details": "Add Publication Details"
+            }
+        ],
+        "national_conferences": [
+            {
+                "id": "[NC1]",
+                "source": "Add National Conference Name",
+                "title": "Add Paper Title",
+                "details": "Add Details"
+            }
+        ],
+        "books": [
+            {
+                "id": "[B1]",
+                "source": "Add Publisher Name",
+                "title": "Add Book Title"
+            }
+        ]
+    },
+    "experience": {
+        "journey": [
+            {
+                "period": "Add Period",
+                "role": "Add Job Role",
+                "location": "Add Company\/University Name",
+                "desc": "Add Job Responsibilities"
+            }
+        ],
+        "examinership": [
+            {
+                "uni": "Add University Name",
+                "location": "Add Location",
+                "icon": "fa-solid fa-graduation-cap"
+            }
+        ]
+    },
+    "teaching": {
+        "subjects": [
+            {
+                "title": "Add Subject Name",
+                "desc": "Add Subject Description"
+            }
+        ],
+        "certifications": [
+            {
+                "title": "Add Certification Name",
+                "desc": "Add Issuing Authority",
+                "icon": "fa-solid fa-certificate"
+            }
+        ],
+        "courses": [
+            {
+                "title": "Add Course Name",
+                "desc": "Add Course Level\/Description"
+            }
+        ],
+        "mentoring": [
+            "Add Mentoring Point 1",
+            "Add Mentoring Point 2"
+        ],
+        "workshops_organized": [
+            {
+                "date": "Add Date",
+                "title": "Add Workshop Title",
+                "location": "Add Workshop Location"
+            }
+        ],
+        "workshops_attended": [
+            "Add Workshop\/Seminar Name 1",
+            "Add Workshop\/Seminar Name 2"
+        ]
+    },
+    "skills": [
+        {
+            "category": "Add Skill Category",
+            "items": "Skill 1 | Skill 2 | Skill 3",
+            "icon": "fa-solid fa-code"
+        }
+    ],
+    "contact": {
+        "email": "example@email.com",
+        "phones": [
+            "+00 00000-00000"
+        ],
+        "offices": [
+            {
+                "name": "Add Office Name",
+                "location": "Add Location"
+            }
+        ],
+        "mailing_address": "Add Your Full Mailing Address Here",
+        "social": [
+            {
+                "platform": "Linkedin",
+                "link": "#",
+                "icon": "fa-brands fa-linkedin-in"
+            }
+        ]
+    },
+    "talks": [
+        {
+            "location": "Add Talk Location & Date",
+            "title": "Add Talk Title",
+            "desc": "Add Summary of the Talk"
+        }
+    ]
+}
