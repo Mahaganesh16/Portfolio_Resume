@@ -67,13 +67,13 @@ include('header.php');
     <section class="about-me-area tmp-section-gap" id="profile">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5">
+                <div class="col-lg-5 d-none d-lg-block">
                     <div class="about-me-image tmp-scroll-trigger tmp-zoom-in">
                         <img src="<?php echo $about['image']; ?>" alt="Profile" class="w-100 radius-round">
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <div class="about-me-content ml--30 ml_md--0 ml_sm--0 mt_md--40 mt_sm--40">
+                    <div class="about-me-content ml--30 ml_md--0 ml_sm--0">
                         <div class="section-head text-align-left">
                             <h2 class="title split-collab tmp-scroll-trigger tmp-fade-in"><?php echo $about['title'] ?? 'Who I Am'; ?></h2>
                         </div>

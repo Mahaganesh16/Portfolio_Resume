@@ -250,7 +250,8 @@ $about = $p_content['about'];
 
         @media only screen and (max-width: 991px) {
             .tmp-section-gapTop { padding-top: 100px !important; }
-            .about-me-area.tmp-section-gap { padding-top: 100px !important; }
+            .about-me-area.tmp-section-gap { padding-top: 50px !important; }
+            .banner-one-main-wrapper .row { min-height: auto !important; padding-bottom: 30px; }
             
             .tmp-section-gap { padding-top: 60px !important; padding-bottom: 40px !important; }
             .tmp-section-gapBottom { padding-bottom: 40px !important; }
@@ -292,7 +293,8 @@ $about = $p_content['about'];
             }
             
             .tmp-section-gapTop { padding-top: 80px !important; }
-            .about-me-area.tmp-section-gap { padding-top: 80px !important; }
+            .about-me-area.tmp-section-gap { padding-top: 20px !important; margin-top: 0 !important; }
+            .banner-one-main-wrapper .row { min-height: auto !important; padding-bottom: 10px; }
             .tmp-section-gap { padding-top: 25px !important; padding-bottom: 25px !important; }
             .tmp-section-gapBottom { padding-bottom: 25px !important; }
 
