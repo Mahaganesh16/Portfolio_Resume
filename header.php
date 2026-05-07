@@ -339,7 +339,7 @@ $about = $p_content['about'];
             .personal-details-table td {
                 display: block !important;
                 width: 100% !important;
-                padding: 5px 0 !important;
+                padding: 5px 15px !important;
                 border-bottom: none !important;
             }
             .personal-details-table td:first-child {
