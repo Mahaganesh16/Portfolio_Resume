@@ -1,4 +1,9 @@
 <?php
+global $skip_header;
+if (!empty($skip_header)) {
+    if (isset($extraStyles)) echo $extraStyles;
+    return;
+}
 require_once('functions.php');
 $currentPage = basename($_SERVER['PHP_SELF']);
 if (!is_page_active($currentPage)) {
@@ -519,17 +524,17 @@ $about = $p_content['about'];
                     <li><a href="./">Home</a></li>
                     <?php endif; ?>
                     <?php if (is_page_active('about.php')): ?>
-                    <li><a href="about.php">About</a></li>
+                    <li><a href="./#profile">About</a></li>
                     <?php endif; ?>
                     <?php if (is_page_active('research.php')): ?>
                     <li class="has-dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle-btn">Research</a>
                         <ul class="submenu">
-                            <li><a href="research.php#intro">Introduction</a></li>
-                            <li><a href="research.php#areas">Research Areas</a></li>
-                            <li><a href="research.php#thesis">M.Phil & Ph.D</a></li>
-                            <li><a href="research.php#patents">Patents</a></li>
-                            <li><a href="research.php#shreetech">Shreetech / ISRD</a></li>
+                            <li><a href="./#intro">Introduction</a></li>
+                            <li><a href="./#areas">Research Areas</a></li>
+                            <li><a href="./#thesis">M.Phil & Ph.D</a></li>
+                            <li><a href="./#patents">Patents</a></li>
+                            <li><a href="./#shreetech">Shreetech / ISRD</a></li>
                         </ul>
                     </li>
                     <?php endif; ?>
@@ -537,11 +542,11 @@ $about = $p_content['about'];
                     <li class="has-dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle-btn">Publications</a>
                         <ul class="submenu">
-                            <li><a href="publications.php#journals">Journals</a></li>
-                            <li><a href="publications.php#intl-conferences">Intl Conferences</a></li>
-                            <li><a href="publications.php#nat-conferences">National Conferences</a></li>
-                            <li><a href="publications.php#patents">Patents</a></li>
-                            <li><a href="publications.php#books">Books</a></li>
+                            <li><a href="./#journals">Journals</a></li>
+                            <li><a href="./#intl-conferences">Intl Conferences</a></li>
+                            <li><a href="./#nat-conferences">National Conferences</a></li>
+                            <li><a href="./#patents">Patents</a></li>
+                            <li><a href="./#books">Books</a></li>
                         </ul>
                     </li>
                     <?php endif; ?>
@@ -549,8 +554,8 @@ $about = $p_content['about'];
                     <li class="has-dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle-btn">Experience</a>
                         <ul class="submenu">
-                            <li><a href="experience.php#journey">Professional Journey</a></li>
-                            <li><a href="experience.php#examinership">Examinership</a></li>
+                            <li><a href="./#journey">Professional Journey</a></li>
+                            <li><a href="./#examinership">Examinership</a></li>
                         </ul>
                     </li>
                     <?php endif; ?>
@@ -558,20 +563,20 @@ $about = $p_content['about'];
                     <li class="has-dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle-btn">Teaching</a>
                         <ul class="submenu">
-                            <li><a href="teaching.php#subjects">Subjects</a></li>
-                            <li><a href="teaching.php#courses">Courses</a></li>
-                            <li><a href="teaching.php#mentoring">Mentoring</a></li>
+                            <li><a href="./#subjects">Subjects</a></li>
+                            <li><a href="./#courses">Courses</a></li>
+                            <li><a href="./#mentoring">Mentoring</a></li>
                         </ul>
                     </li>
                     <?php endif; ?>
                     <?php if (is_page_active('talks.php')): ?>
-                    <li><a href="talks.php">Talks</a></li>
+                    <li><a href="./#resource-person">Talks</a></li>
                     <?php endif; ?>
                     <?php if (is_page_active('skills.php')): ?>
-                    <li><a href="skills.php">Skills</a></li>
+                    <li><a href="./#skills">Skills</a></li>
                     <?php endif; ?>
                     <?php if (is_page_active('contact.php')): ?>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="./#contact">Contact</a></li>
                     <?php endif; ?>
                 </ul>
                 <div class="social-wrapper mt--40">

@@ -1,3 +1,9 @@
+<?php
+global $skip_footer;
+if (!empty($skip_footer)) {
+    return;
+}
+?>
     <!-- JS Scripts -->
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/jquery-ui.min.js"></script>

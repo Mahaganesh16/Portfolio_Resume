@@ -63,4 +63,24 @@ include('header.php');
     <?php endif; ?>
     <!-- tmp banner area end -->
 
+    <!-- MOBILE VIEW: All Pages Content -->
+    <div class="d-block d-lg-none" style="overflow-x: hidden;">
+        <?php
+        global $skip_header, $skip_footer;
+        $skip_header = true;
+        $skip_footer = true;
+
+        $pages = ['about.php', 'research.php', 'publications.php', 'experience.php', 'teaching.php', 'talks.php', 'skills.php', 'contact.php'];
+        foreach ($pages as $p) {
+            if (is_page_active($p) && file_exists($p)) {
+                $extraStyles = '';
+                include($p);
+            }
+        }
+        
+        $skip_header = false;
+        $skip_footer = false;
+        ?>
+    </div>
+
 <?php include('footer.php'); ?>
