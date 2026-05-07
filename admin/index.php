@@ -73,6 +73,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $content[$section][$key] = $value;
             }
         }
+
+        // Synchronize email fields across customization and contact sections
+        if ($section === 'customization' && isset($_POST['data']['sidebar_email'])) {
+            $new_email = $_POST['data']['sidebar_email'];
+            $content['contact']['email'] = $new_email;
+        }
+        if ($section === 'contact' && isset($_POST['data']['email'])) {
+            $new_email = $_POST['data']['email'];
+            $content['customization']['sidebar_email'] = $new_email;
+        }
         
         $content['customization']['is_profile_setup'] = true;
         file_put_contents($update_file, json_encode($content, JSON_PRETTY_PRINT));
@@ -101,6 +111,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $content[$section][$index] = $_POST['data'];
         }
+
+
+
         $content['customization']['is_profile_setup'] = true;
         file_put_contents($update_file, json_encode($content, JSON_PRETTY_PRINT));
         $message = "Item updated successfully!";
@@ -780,6 +793,7 @@ $is_list = is_array($tab_data) && (isset($tab_data[0]) || empty($tab_data));
                             <?php 
                             if($active_tab === 'contact' && is_array($val)) continue; 
                             if($active_tab === 'research' && $key === 'patents_summary') continue; 
+                            if($active_tab === 'customization' && in_array($key, ['page_status', 'section_status', 'is_profile_setup'])) continue;
                             
                             // Check if it's a complex list that should be skipped here
                             if(is_array($val)) {

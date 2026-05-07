@@ -23,14 +23,17 @@
         "sidebar_title": "Add Sidebar Title",
         "sidebar_description": "Add Sidebar Description",
         "sidebar_phone": "+00 00000-00000",
-        "sidebar_email": "example@email.com",
+        "sidebar_email": "mmahaganesh16@gmail.com",
         "sidebar_address": "Add Your Address Here",
         "page_status": {
             "index.php": "active",
             "publications.php": "active"
         },
         "section_status": {
-            "hero": "active"
+            "hero": "active",
+            "about.details": "active",
+            "about": "active",
+            "talks": "active"
         }
     },
     "about": {
@@ -47,7 +50,7 @@
             },
             {
                 "key": "Email",
-                "value": "Add Email"
+                "value": "mmaga@gmail.com"
             }
         ],
         "education": [
@@ -188,7 +191,7 @@
         }
     ],
     "contact": {
-        "email": "example@email.com",
+        "email": "mmahaganesh16@gmail.com",
         "phones": [
             "+00 00000-00000"
         ],

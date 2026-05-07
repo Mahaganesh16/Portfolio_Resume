@@ -114,7 +114,7 @@ include('header.php');
                 <div class="col-lg-12">
                     <div class="contact-form-wrapper bg-blur-style-one p--40 radius-10 tmp-scroll-trigger tmp-fade-in">
                         <h3 class="title mb--30 text-center">Send a Message</h3>
-                        <form class="tmp-contact-form" id="contact-form" action="mailer" method="POST">
+                        <form class="tmp-contact-form" id="contact-form" action="mailer.php" method="POST">
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
